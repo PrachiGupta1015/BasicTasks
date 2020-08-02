@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class SwapLastName
+{
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+String name1= sc.nextLine();
+String name2= sc.nextLine();
+
+int index1= name1.indexOf('-');
+int index2= name2.indexOf('-');
+
+String result1 = name1.substring(0,index1)+name2.substring(index2);
+        String result2= name2.substring(0,index2)+name1.substring(index1);
+System.out.println(result1);
+System.out.println(result2);
+}
+}
